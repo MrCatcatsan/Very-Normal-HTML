@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+                <style></style>
+            </head>
+            <body>
+                
+    
+        <meta charset="UTF-8">
+        <title>Inspiring Quote</title>
+    
+    
+        <center>
+            <h1>🌟Inspiring Quote🌟</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Albert_Einstein_sticks_his_tongue.jpg/960px-Albert_Einstein_sticks_his_tongue.jpg" width="30%"><br>
+            <button onclick="random_quote()">A random quote</button>
+            <p id="Inspiring">An apple a day keeps doctor away!</p>
+        </center>
+    
+
+                <script>var verses = [
+    "An apple a day keeps doctor away!",
+    "Works hard Play hard.",
+    "The best way out is through.",
+    "Believe you can and you're halfway there.",
+]
+
+function random_quote(){
+    var random = parseInt(Math.random() * 4);
+    document.getElementById("Inspiring").innerText = verses [random];
+}</script>
+            
+        
+    </body>
